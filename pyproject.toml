@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "polyopening"
+version = "0.1.0"
+description = "A tool to determine the opening angle of coordination polyhedra"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+
+authors = [
+    { name = "Lukas Hueckmann" }
+]
+
+dependencies = [
+    # "requests>=2.0",
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/lhuckmann/polyopening.git"
+Repository = "https://github.com/lhuckmann/polyopening.git"
+
+[tool.setuptools.packages.find]
+where = ["src"]
