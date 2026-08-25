@@ -15,7 +15,9 @@ authors = [
 ]
 
 dependencies = [
-    # "requests>=2.0",
+	"numpy>=2.0",
+	"ase>=3.25.0",
+	"qc-grid>=0.0.9"
 ]
 
 classifiers = [
