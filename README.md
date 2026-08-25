@@ -18,10 +18,21 @@ from polyopening import PolyhedralOpeningAngle
 get_angles = PolyhedralOpeningAngle(
     cutoff=cutoff,
     lebedev_degree=131,
-    atom_type=element_1,
-    neighbor_type=element_2
+    atom_type="C",
+    neighbor_type=["C", "H"]
 )
 ```
 * `cutoff`: cutoff radius in &#8491 for the first coordination shell of the reference atom. Can be a singe float number or a pair-wise element specific dictionary like ```cutoff = {('H', 'H'): 1.1, ('C', 'H'): 1.3, ('C', 'C'): 1.85}``` See also ASE [`neighbor_list`](https://docs.ase-lib.org/ase/neighborlist.html#ase.neighborlist.neighbor_list).
-* `lebedev_degree`: Determines the number of grid points for the Lebedev Quadrature. Maximum degree is 131 ( = 5810 grid points).
+* `lebedev_degree`: Determines the number of grid points for the [Lebedev Quadrature](https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.lebedev_rule.html). Maximum degree is 131 ( = 5810 grid points).
 * `atom_type`: The element type, for which the opening angles are to be calculated. Can be a single string (`"C"`) or a list of strings (`["C", "H"]`). If all atoms are to be determined, select `"all"`.
+
+### Run
+```
+angles = get_angles.compute(Atoms_object)
+```
+The calculation of the opening angles is executed by assigning an [ASE Atoms object](https://docs.ase-lib.org/ase/atoms.html#) to the `compute( )` function. Returns a 1D array with all the opening angles in [deg].
+
+## References
+When using the code, please cite
+
+L. Hückmann, J. Cottom, J. Meyer *Adv. Phys. Res.* **2024**, *3*, 2300109. [https://doi.org/10.1002/apxr.202300109](https://doi.org/10.1002/apxr.202300109)
