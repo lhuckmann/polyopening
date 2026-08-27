@@ -27,13 +27,13 @@ class PolyhedralOpeningAngle:
 
     def __init__(
         self,
-        cutoff: float = 2.0,
+        cutoff: 2.0,
         lebedev_degree: int = 110,
-        atom_type: str | list[str] = "all",
-        neighbor_type: str | list[str] = "all"
+        atom_type: Union[str, List[str]] = "all",
+        neighbor_type: Union[str, List[str]] = "all"
     ) -> None:
 
-        self.cutoff = float(cutoff)
+        self.cutoff = cutoff
         self.atom_type = atom_type
         self.neighbor_type = neighbor_type
         self.lebedev_degree = lebedev_degree
