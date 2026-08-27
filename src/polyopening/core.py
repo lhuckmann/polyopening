@@ -29,8 +29,8 @@ class PolyhedralOpeningAngle:
         self,
         cutoff: 2.0,
         lebedev_degree: int = 110,
-        atom_type: Union[str, List[str]] = "all",
-        neighbor_type: Union[str, List[str]] = "all"
+        atom_type: str | list[str] = "all",
+        neighbor_type: str | list[str] = "all"
     ) -> None:
 
         self.cutoff = cutoff
