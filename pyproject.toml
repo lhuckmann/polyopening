@@ -9,7 +9,6 @@ description = "A tool to determine the opening angle of coordination polyhedra"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
-
 authors = [
     { name = "Lukas Hueckmann" },
 ]
@@ -23,7 +22,6 @@ dependencies = [
 classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
 
