@@ -10,6 +10,10 @@ The following packages are required
 
 ## Installation
 
+```bash
+pip install polyopening
+```
+
 ## Usage
 ### Set-up
 ```
