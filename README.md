@@ -6,7 +6,8 @@ A python tool to determine the opening angle of coordination polyhedra of solids
 The following packages are required
 * numpy >= 2.0,
 * ase >= 3.25.0 ([Atomic Simulation Environment](https://docs.ase-lib.org/))
-* qc-grid >= 0.0.9 
+* qc-grid >= 0.0.9
+* scipy <= 1.16.2
 
 ## Installation
 
