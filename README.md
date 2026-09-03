@@ -17,7 +17,7 @@ pip install polyopening
 
 ## Usage
 ### Set-up
-```
+```python
 from polyopening import PolyhedralOpeningAngle
 
 get_angles = PolyhedralOpeningAngle(
@@ -33,7 +33,7 @@ get_angles = PolyhedralOpeningAngle(
 * `neighbor_type`: The element type(s) to be taken into account when determining the coordination polyhedron. Same syntax as `atom_type`.
 
 ### Run
-```
+```python
 angles = get_angles.compute(Atoms_object)
 ```
 The calculation of the opening angles is executed by assigning an [ASE Atoms object](https://docs.ase-lib.org/ase/atoms.html#) to the `compute( )` function. Returns a 1D array with all the opening angles in [deg].
