@@ -27,7 +27,7 @@ class PolyhedralOpeningAngle:
 
     def __init__(
         self,
-        cutoff: float = 2.0,
+        cutoff: float | dict[tuple[str, str], float] = 2.0,
         lebedev_degree: int = 110,
         atom_type: str | list[str] = "all",
         neighbor_type: str | list[str] = "all"
