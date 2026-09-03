@@ -6,7 +6,7 @@ A python tool to determine the opening angle of coordination polyhedra of solids
 The following packages are required
 * numpy >= 2.0,
 * ase >= 3.25.0 ([Atomic Simulation Environment](https://docs.ase-lib.org/))
-* qc-grid >= 0.0.9
+* qc-grid >= 0.0.9 (\[[Tehrani 2024](https://doi.org/10.1063/5.0202240)\])
 * scipy <= 1.16.2
 
 ## Installation
@@ -39,6 +39,7 @@ angles = get_angles.compute(Atoms_object)
 The calculation of the opening angles is executed by assigning an [ASE Atoms object](https://docs.ase-lib.org/ase/atoms.html#) to the `compute( )` function. Returns a 1D array with all the opening angles in [deg].
 
 ## References
-When using the code, please cite
+Alireza Tehrani, Xiaotian Derrick Yang, Marco Martínez-González, Leila Pujal, Raymundo Hernández-Esparza, Matthew Chan, Esteban Vöhringer-Martinez, Toon Verstraelen, Paul W. Ayers, Farnaz Heidar-Zadeh; Grid: A Python library for molecular integration, interpolation, differentiation, and more. *J. Chem. Phys.* **2024**, *160* (17): 172503. [https://doi.org/10.1063/5.0202240](https://doi.org/10.1063/5.0202240)
 
+## Citation
 L. Hückmann, J. Cottom, J. Meyer *Adv. Phys. Res.* **2024**, *3*, 2300109. [https://doi.org/10.1002/apxr.202300109](https://doi.org/10.1002/apxr.202300109)
